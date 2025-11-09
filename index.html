@@ -49,7 +49,7 @@
         <div class="top-bar menu__top">
           <a href="#" class="top-bar__logo-link">
             <img
-            src="/images/b&ologo-3x.png"
+            src="src/images/b&ologo-3x.png"
             alt="Bose logo"
             class="top-bar__logo"
             >
@@ -248,28 +248,32 @@
               type="text"
               placeholder="Name"
               class="contact-us__input"
+              required
               >
               <input
               type="email"
               placeholder="Email"
               class="contact-us__input"
+              required
               >
               <textarea
               placeholder="Message"
-              class="contact-us__input contact-us__input--message"></textarea>
+              class="contact-us__input contact-us__input--message" required></textarea>
               <input
               type="submit"
               class="btn"
-              value="Send">
+              value="Send"
+              >
+
             </form>
             <div class="contacts">
               <h4 class="contacts__titles">Phone</h4>
               <h4 class="contacts__contents">
-                  +1 234 5555-55-55
+                <a href="tel:+1 234 5555-55-55" class="contacts__contents">+1 234 5555-55-55</a>
               </h4>
               <h4 class="contacts__titles">Email</h4>
               <h4 class="contacts__contents">
-                  hello@bang&olufsen.com
+                <a href="mailto:hello@bang&olufsen.com" class="contacts__contents">hello@bang&olufsen.com</a>
               </h4>
               <h4 class="contacts__titles">Address</h4>
               <a
